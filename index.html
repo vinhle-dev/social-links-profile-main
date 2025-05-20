@@ -1,34 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600, 700&display=swap"
+      rel="stylesheet"
+    />
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      body {
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #141414;
+        display: flex;
+        height: 100vh;
+        color: white;
+      }
+
+      .card {
+        margin: auto;
+        background-color: #1f1f1f;
+        border-radius: 10px;
+        width: 400px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+      }
+
+      .card__avatar {
+        background-image: url("./assets/images/avatar-jessica.jpeg");
+        background-size: cover;
+        background-position: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+      }
+
+      .card__info {
+        text-align: center;
+      }
+
+      .info__name {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 25px;
+      }
+
+      .info__location {
+        color: #dcfa75;
+        font-weight: 600;
+      }
+
+      .info__description {
+        padding-top: 30px;
+      }
+
+      .card__network {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+
+      .network__item {
+        background-color: #333333;
+        padding: 14px 30px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .network__item:hover {
+        background-color: #dcfa75;
+        color: black;
+      }
+
+      .network__item:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__avatar"></div>
+      <div class="card__info">
+        <p class="info__name">Jessca Randall</p>
+        <p class="info__location">London, United Kingdom</p>
+        <p class="info__description">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="card__network">
+        <div class="network__item">GitHub</div>
+        <div class="network__item">Frontend Mentor</div>
+        <div class="network__item">LinkedIn</div>
+        <div class="network__item">Twitter</div>
+        <div class="network__item">Instagram</div>
+      </div>
+    </div>
+  </body>
 </html>
